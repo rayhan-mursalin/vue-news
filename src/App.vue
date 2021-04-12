@@ -29,6 +29,20 @@ export default {
 		}
 	},
 	methods: {
+		// Helper function for extracting a nested image object
+		extractImage(post) {
+			const defaultImg = {
+				url: "http://placehold.it/210x140?text=N/A",
+				caption: post.title,
+			}
+			if (!post.multimedia) {
+				return defaultImg
+			}
+			let imgObj = post.multimedia.find(
+				media => media.format === "mediumThreeByTwo210"
+			)
+			return imgObj ? imgObj : defaultImg
+		},
 			async fetchNews() {
 				try {
 					const url = `https://api.nytimes.com/svc/topstories/v2/${this.section}.json?api-key=${api}`
