@@ -1,24 +1,10 @@
-# news-app
+# Vue-news
 
-## Project setup
-```
-npm install
-```
+News app build with
+- Vue 3
+- Tailwind CSS
+- NYT times API
+- Axios
+- Vercel
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Demo: https://vue-news-rayhanmursalin-gmailcom.vercel.app/
